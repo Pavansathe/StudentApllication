@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+           <form action ="#" th:action="@{/student}" th:object ="${student}"  method="POST">
+		
+		<input type="hidden" th:field="*{rollNumber}"/>
+		
+		<input type="text" th:field= "*{rollNumber}"  class="form-control mb-3 col-4">	
+		
+		<input type="text" th:field= "*{name}"  class="form-control mb-3 col-4">	
+		
+		<button type="submit" class="btn btn-info col 2" >Update Student</button>	
+		</form>
+		
+</body>
+</html>
